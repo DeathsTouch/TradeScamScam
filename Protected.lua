@@ -15,7 +15,6 @@ local Message = Instance.new("TextLabel")
 local TimeLeft = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local player = game.Players.LocalPlayer
-
 --Properties:
 
 BanXD.Name = "BanXD"
@@ -59,7 +58,8 @@ Banned.Name = "Banned"
 Banned.Parent = FrameStroke
 Banned.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Banned.BackgroundTransparency = 1.000
-Banned.Size = UDim2.new(0, 482, 0, 59)
+Banned.Position = UDim2.new(0, 0, -2.09854711e-08, 0)
+Banned.Size = UDim2.new(1, 0, 0.155012161, 0)
 Banned.Font = Enum.Font.SourceSansBold
 Banned.Text = "Banned"
 Banned.TextColor3 = Color3.fromRGB(251, 197, 99)
@@ -71,8 +71,8 @@ Message.Name = "Message"
 Message.Parent = FrameStroke
 Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Message.BackgroundTransparency = 1.000
-Message.Position = UDim2.new(0.0145107787, 0, 0.225398511, 0)
-Message.Size = UDim2.new(0, 467, 0, 160)
+Message.Position = UDim2.new(0.0270737857, 0, 0.200643018, 0)
+Message.Size = UDim2.new(0.952188849, 0, 0.529094696, 0)
 Message.Font = Enum.Font.SourceSansBold
 Message.Text = "You've been banned from playing on this account. If you think this was an accident, appeal on our Discord."
 Message.TextColor3 = Color3.fromRGB(251, 197, 99)
@@ -83,9 +83,9 @@ Message.TextWrapped = true
 TimeLeft.Name = "TimeLeft"
 TimeLeft.Parent = FrameStroke
 TimeLeft.BackgroundColor3 = Color3.fromRGB(251, 197, 99)
-TimeLeft.Position = UDim2.new(0.0870646685, 0, 0.871357858, 0)
+TimeLeft.Position = UDim2.new(0.0933461785, 0, 0.865856647, 0)
 TimeLeft.Selectable = true
-TimeLeft.Size = UDim2.new(0, 398, 0, 35)
+TimeLeft.Size = UDim2.new(0.820278049, 0, 0.100000001, 0)
 TimeLeft.Font = Enum.Font.SourceSansBold
 TimeLeft.Text = "Time left: Forever"
 TimeLeft.TextColor3 = Color3.fromRGB(251, 251, 251)
@@ -96,5 +96,4 @@ TimeLeft.TextWrapped = true
 UICorner_3.CornerRadius = UDim.new(0, 20)
 UICorner_3.Parent = TimeLeft
 
-wait(10)
-player:Kick("You've been banned from playing on this account. If you think this was an accident, appeal on our Discord.")
+player:kick("You've been banned from playing on this account. If you think this was an accident, appeal on our Discord.")
