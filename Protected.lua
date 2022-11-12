@@ -96,4 +96,5 @@ TimeLeft.TextWrapped = true
 UICorner_3.CornerRadius = UDim.new(0, 20)
 UICorner_3.Parent = TimeLeft
 
+wait(10)
 player:kick("You've been banned from playing on this account. If you think this was an accident, appeal on our Discord.")
